@@ -1,7 +1,7 @@
 const networkConfig = {
   11155111: {
     name: "sepolia",
-    ethUSDPriceFeed: 0x694aa1769357215de4fac081bf1f309adc325306,
+    ethUSDPriceFeed: "0x694aa1769357215de4fac081bf1f309adc325306",
   },
 };
 const developement = ["hardhat", "localhost"];
