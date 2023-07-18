@@ -16,6 +16,7 @@ module.exports = {
   },
   networks: {
     sepolia: {
+      chainId: 11155111,
       url: "https://sepolia.infura.io/v3/", // Replace with the actual RPC URL
       accounts: [
         "6483548cb0004e5d295944edefe99c586570cbe77a6e76fc49fea11e7cf5d151",
