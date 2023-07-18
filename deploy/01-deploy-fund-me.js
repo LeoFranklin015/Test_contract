@@ -3,7 +3,7 @@ const { networkConfig, developement } = require("../help-hardhat-config");
 
 module.exports = async ({ getNamedAccounts, deployments }) => {
   const { deploy, log } = deployments;
-  const { deployer } = await getNamedAccounts;
+  const { deployer } = await getNamedAccounts();
   const chainId = network.config.chainId;
 
   let ethUsdPriceFeedAddress;
