@@ -20,7 +20,7 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
     log: true,
     waitConfirmations: network.config.blockConfirmation || 1,
   });
-  if (!developement.includes(network.name) && process.env.ETHERSCAN_API) {
+  if (!developement.includes(network.name)) {
     await verify(fundMe.address, args);
   }
 };
