@@ -1,7 +1,7 @@
 require("@nomicfoundation/hardhat-toolbox");
 require("hardhat-deploy");
-require("dotenv").config();
-const ETHERSCAN_API = process.env.ETHERSCAN_API;
+
+/** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
   solidity: {
     compilers: [{ version: "0.8.8" }, { version: "0.6.6" }],
@@ -23,11 +23,6 @@ module.exports = {
         "6483548cb0004e5d295944edefe99c586570cbe77a6e76fc49fea11e7cf5d151",
       ], // Add the private keys of the accounts you want to use on the "semolia" network
       blockConfirmation: 6,
-    },
-  },
-  etherscan: {
-    apiKey: {
-      sepolia: ETHERSCAN_API, // Replace with the API key you obtained from Etherscan.
     },
   },
 };
